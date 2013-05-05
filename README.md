@@ -87,10 +87,6 @@ onLoop() {
 
 PIC B (Master):
 ``` js
-call() {
-  LA0 = ~LA0;
-}
-
 onSetup() {
   TwitterSignUp("@b");
   TwitterAddWireMaster();

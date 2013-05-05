@@ -6,8 +6,6 @@ jsPIC is a platform for the PIC18 processor that provides a javascript inspired 
 
 ## Blink a light every second
 
-server:
-
 ``` js
 blink() {
   LA0 = ~LA0;

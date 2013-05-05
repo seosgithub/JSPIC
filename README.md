@@ -4,18 +4,21 @@ jsPIC is a platform for the PIC18 processor that provides a javascript inspired 
 
 # example
 
-## Blink a light
+## Blink a light every second
 
 server:
 
 ``` js
-var dnode = require('dnode');
-var server = dnode({
-    transform : function (s, cb) {
-        cb(s.replace(/[aeiou]{2,}/, 'oo').toUpperCase())
-    }
-});
-server.listen(5004);
+blink() {
+  LA0 = ~LA0;
+}
+
+onSetup() {
+  SetInterval(1000, blink);
+}
+
+onLoop() {
+}
 ```
 
 client:

@@ -4,7 +4,7 @@ jsPIC is a platform for the PIC18 processor that provides a javascript inspired 
 
 # example
 
-## listen and connect
+## Blink a light
 
 server:
 

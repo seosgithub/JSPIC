@@ -1,4 +1,6 @@
-# jsPIC - Authors: Matt Mattiol && Seo Townsend 2013
+# jsPIC
+
+Authors: Matt Mattiol && Seo Townsend 2013
 
 jsPIC is a platform for the PIC18 processor that provides a javascript inspired API with 'remoting' capabilities for RPC.
 

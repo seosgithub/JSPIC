@@ -118,4 +118,14 @@ onLoop() {
 ```
 
 # File Breakdown
-## Test
+## JWire.c - Raw I2C Slave access
+## main.c - User onSetup() and onLoop() code goes here
+## serial.c - Raw Serial Access
+## twitter.c - IPC networking managere
+## twitterSerial.c - Driver for using serial.c with Twitter
+## twitterWireMaster.c - I2C Master driver for using wireMaster.c with Twitter
+## twitterWireSlave.c - I2C Slave driver for using JWire.c with Twitter
+## wireMaster.c - I2C Master raw access
+## Async.c - Asynchronous function que
+## Interurpts.c - Interrupt handler
+## jspic.c - Main function that calls onSetup() and onBegin()

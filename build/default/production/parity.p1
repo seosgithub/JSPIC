@@ -1,0 +1,82 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[s S2 `s 1 `s 1 `uc 1 `uc 1 `uc 1 `uc -> 5 `i ]
+[n S2 PACKET_T to from parity count subject data ]
+[s S3 `uc -> 2 `i `uc -> 2 `i `uc 1 `uc 1 `uc 1 `uc -> 5 `i ]
+[n S3 PACKETAlt_T to from parity count subject data ]
+[; ;packets.h: 5: typedef struct LEGACY_PACKET_T {
+[; ;packets.h: 6: unsigned char id;
+[; ;packets.h: 7: unsigned char num;
+[; ;packets.h: 8: unsigned char parity;
+[; ;packets.h: 9: unsigned char count;
+[; ;packets.h: 10: unsigned char data[4];
+[; ;packets.h: 11: } LegacyPacket_t;
+[; ;packets.h: 17: typedef struct PACKET_T {
+[; ;packets.h: 18: short to;
+[; ;packets.h: 19: short from;
+[; ;packets.h: 20: unsigned char parity;
+[; ;packets.h: 21: unsigned char count;
+[; ;packets.h: 22: unsigned char subject;
+[; ;packets.h: 23: unsigned char data[5];
+[; ;packets.h: 24: } Packet_t;
+[; ;packets.h: 27: typedef struct PACKETAlt_T {
+[; ;packets.h: 28: char to[2];
+[; ;packets.h: 29: char from[2];
+[; ;packets.h: 30: unsigned char parity;
+[; ;packets.h: 31: unsigned char count;
+[; ;packets.h: 32: unsigned char subject;
+[; ;packets.h: 33: unsigned char data[5];
+[; ;packets.h: 34: } PacketAlt_t;
+[; ;parity.h: 7: void SetParity(Packet_t *packet);
+[; ;parity.h: 10: int CheckParity(Packet_t *packet);
+"3 parity.c
+[v _GetParity `(uc ~T0 @X0 1 ef1`*S2 ]
+{
+[; ;parity.c: 3: unsigned char GetParity(Packet_t *packet) {
+[e :U _GetParity ]
+[v _packet `*S2 ~T0 @X0 1 r1 ]
+[f ]
+"4
+[v _p `*S3 ~T0 @X0 1 a ]
+[; ;parity.c: 4: PacketAlt_t *p = (PacketAlt_t *)packet;
+[e = _p -> _packet `*S3 ]
+"6
+[v _parity `uc ~T0 @X0 1 a ]
+[; ;parity.c: 6: unsigned char parity = p->to[0] + p->to[1] + p->from[0] + p->from[1];
+[e = _parity -> + + + -> *U + &U . *U _p 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _p 0 `ui `ux `i -> *U + &U . *U _p 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _p 0 `ui `ux `i -> *U + &U . *U _p 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _p 1 `ui `ux `i -> *U + &U . *U _p 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _p 1 `ui `ux `i `uc ]
+[; ;parity.c: 8: return parity;
+"8
+[e ) _parity ]
+[e $UE 4  ]
+[; ;parity.c: 9: }
+"9
+[e :UE 4 ]
+}
+"11
+[v _SetParity `(v ~T0 @X0 1 ef1`*S2 ]
+{
+[; ;parity.c: 11: void SetParity(Packet_t *packet) {
+[e :U _SetParity ]
+[v _packet `*S2 ~T0 @X0 1 r1 ]
+[f ]
+[; ;parity.c: 12: packet->parity = GetParity(packet);
+"12
+[e = . *U _packet 2 ( _GetParity (1 _packet ]
+[; ;parity.c: 13: }
+"13
+[e :UE 5 ]
+}
+"15
+[v _CheckParity `(i ~T0 @X0 1 ef1`*S2 ]
+{
+[; ;parity.c: 15: int CheckParity(Packet_t *packet) {
+[e :U _CheckParity ]
+[v _packet `*S2 ~T0 @X0 1 r1 ]
+[f ]
+[; ;parity.c: 16: return (packet->parity == GetParity(packet));
+"16
+[e ) -> == -> . *U _packet 2 `i -> ( _GetParity (1 _packet `i `i ]
+[e $UE 6  ]
+[; ;parity.c: 17: }
+"17
+[e :UE 6 ]
+}

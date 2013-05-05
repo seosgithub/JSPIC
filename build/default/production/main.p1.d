@@ -1,0 +1,24 @@
+ build/default/production/main.d  \
+ build/default/production/main.p1:  \
+ main.c  \
+parity.h  \
+jwire.h  \
+superSimpleSerial.h  \
+async.h  \
+jspic.h  \
+interrupts.h  \
+twitterSerial.h  \
+string2.h  \
+ledCounter.h  \
+twitterWireMaster.h  \
+crashHelper.h  \
+twitter.h  \
+json.h  \
+macaw.h  \
+packets.h  \
+flipper.h  \
+serial.h  \
+globals.h  \
+interval.h  \
+wireMaster.h  \
+twitterWireSlave.h 

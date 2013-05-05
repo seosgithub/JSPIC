@@ -1,0 +1,3759 @@
+Microchip MPLAB XC8 Compiler V1.12 ()
+
+Linker command line:
+
+-W4 --edf=/opt/microchip/xc8/v1.12/dat/en_msgs.txt -cs \
+  -h+dist/default/production/JSPIC.production.sym -z -Q18F2680 -ol.obj \
+  -Mdist/default/production/JSPIC.production.map -E1 -ver=XC8 \
+  -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh -ASMALLCONST=0D00h-0DFFhx243 \
+  -AMEDIUMCONST=0D00h-0FFFFh -ACOMRAM=01h-05Fh -AABS1=00h-0CFFh \
+  -ABIGRAM=01h-0CFFh -ARAM=060h-0FFh,0100h-01FFhx12 -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh -ABANK9=0900h-09FFh \
+  -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh -ABANK12=0C00h-0CFFh \
+  -ASFR=0D00h-0DFFhx2,0F00h-0F5Fh,0F60h-0FFFh \
+  -preset_vec=00h,intcode=08h,intcodelo,powerup,init,end_init \
+  -pramtop=0D00h -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST \
+  -pconst=CONST -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F003FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE /tmp/cgtWCtNAa.obj \
+  dist/default/production/JSPIC.production.obj 
+
+Object code version is 3.10
+
+Machine type is 18F2680
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+/tmp/cgtWCtNAa.obj
+                end_init                             18       18        4        4       0
+                reset_vec                             0        0        4        0       0
+                idloc                            200000   200000        8   200000       0
+                config                           300000   300000        E   300000       0
+dist/default/production/JSPIC.production.obj
+                intcode                               8        8       10        4       0
+                smallconst                          D00      D00       1A      680       0
+                text72                             229C     229C       36      68D       0
+                text71                             1E08     1E08       5C      68D       0
+                text70                             1FFA     1FFA       4E      68D       0
+                text69                             24F2     24F2       16      68D       0
+                text68                             1EBA     1EBA       56      68D       0
+                text67                             188C     188C       B4      68D       0
+                text66                              D1A      D1A      16A      68D       0
+                text65                              E84      E84      164      68D       0
+                text64                             246E     246E       1E      68D       0
+                text63                             113A     113A      132      68D       0
+                text62                             1C76     1C76       6E      68D       0
+                text61                             235A     235A       2A      68D       0
+                text60                             251A     251A       12      68D       0
+                text59                             166E     166E       B6      68D       0
+                text58                             1FAC     1FAC       4E      68D       0
+                text57                             21B4     21B4       3E      68D       0
+                text56                             23F0     23F0       22      68D       0
+                text55                             222E     222E       38      68D       0
+                text54                              FE8      FE8      152      68D       0
+                text53                             253A     253A        E      68D       0
+                intcode_body                       14EE     14EE       C8      68D       0
+                text51                             2266     2266       36      68D       0
+                text50                             1B02     1B02       86      68D       0
+                text49                             19DA     19DA       96      68D       0
+                text48                             1D4C     1D4C       60      68D       0
+                text47                             1C04     1C04       72      68D       0
+                text46                             22D2     22D2       30      68D       0
+                text45                             20DC     20DC       4A      68D       0
+                text44                             1F5E     1F5E       4E      68D       0
+                text43                             1E64     1E64       56      68D       0
+                text42                             25AA     25AA        2      68D       0
+                text41                             1424     1424       CA      68D       0
+                text40                             24C4     24C4       18      68D       0
+                text39                             258E     258E        A      68D       0
+                text38                             2584     2584        A      68D       0
+                text37                             23AA     23AA       24      68D       0
+                text36                             2302     2302       2E      68D       0
+                text35                             2450     2450       1E      68D       0
+                text34                             2092     2092       4A      68D       0
+                text33                             257A     257A        A      68D       0
+                text32                             2508     2508       12      68D       0
+                text31                             2570     2570        A      68D       0
+                text30                             1F10     1F10       4E      68D       0
+                text29                             2384     2384       26      68D       0
+                text28                             2432     2432       1E      68D       0
+                text27                             259E     259E        4      68D       0
+                text26                             1B88     1B88       7C      68D       0
+                text25                             1CE4     1CE4       68      68D       0
+                text24                             23CE     23CE       22      68D       0
+                text23                             2126     2126       48      68D       0
+                text22                             24DC     24DC       16      68D       0
+                text21                             15B6     15B6       B8      68D       0
+                text20                             2566     2566        A      68D       0
+                text19                             255C     255C        A      68D       0
+                text18                             2552     2552        A      68D       0
+                text17                             252C     252C        E      68D       0
+                text16                             25A8     25A8        2      68D       0
+                text15                             17D8     17D8       B4      68D       0
+                text14                             25A6     25A6        2      68D       0
+                text13                             216E     216E       46      68D       0
+                text12                             2548     2548        A      68D       0
+                text11                             2412     2412       20      68D       0
+                text10                             2048     2048       4A      68D       0
+                text9                              1724     1724       B4      68D       0
+                text8                              21F2     21F2       3C      68D       0
+                text7                              24A8     24A8       1C      68D       0
+                text6                              126C     126C       E4      68D       0
+                text5                              25A4     25A4        2      68D       0
+                text4                              248C     248C       1C      68D       0
+                text3                              1A70     1A70       92      68D       0
+                text2                              1DAC     1DAC       5C      68D       0
+                text1                              1350     1350       D4      68D       0
+                text0                              2330     2330       2A      68D       0
+                cstackCOMRAM                          1        1       2A        1       1
+                cstackBANK0                          AB       AB       30       60       1
+                bssBIGRAM                           496      496      1B8      496       1
+                bssBANK4                            400      400       96      400       1
+                bssBANK3                            300      300       FA      300       1
+                bssBANK2                            200      200       A2      200       1
+                bssBANK1                            100      100       D4      100       1
+                dataBANK0                            DB       DB        6       60       1
+                bssBANK0                             60       60       4B       60       1
+                dataCOMRAM                           53       53        2        1       1
+                bssCOMRAM                            2B       2B       28        1       1
+                cinit                              1940     1940       9A      68D       0
+                idataBANK0                         2598     2598        6      68D       0
+                idataCOMRAM                        25A2     25A2        2      68D       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                end_init                             18       18        4         0
+                intcode                               8        8       10         0
+                reset_vec                             0        0        4         0
+                text72                             229C     229C       36         0
+                text71                             1E08     1E08       5C         0
+                text70                             1FFA     1FFA       4E         0
+                text69                             24F2     24F2       16         0
+                text68                             1EBA     1EBA       56         0
+                text67                             188C     188C       B4         0
+                text66                              D1A      D1A      16A         0
+                text65                              E84      E84      164         0
+                text64                             246E     246E       1E         0
+                text63                             113A     113A      132         0
+                text62                             1C76     1C76       6E         0
+                text61                             235A     235A       2A         0
+                text60                             251A     251A       12         0
+                text59                             166E     166E       B6         0
+                text58                             1FAC     1FAC       4E         0
+                text57                             21B4     21B4       3E         0
+                text56                             23F0     23F0       22         0
+                text55                             222E     222E       38         0
+                text54                              FE8      FE8      152         0
+                text53                             253A     253A        E         0
+                intcode_body                       14EE     14EE       C8         0
+                text51                             2266     2266       36         0
+                text50                             1B02     1B02       86         0
+                text49                             19DA     19DA       96         0
+                text48                             1D4C     1D4C       60         0
+                text47                             1C04     1C04       72         0
+                text46                             22D2     22D2       30         0
+                text45                             20DC     20DC       4A         0
+                text44                             1F5E     1F5E       4E         0
+                text43                             1E64     1E64       56         0
+                text42                             25AA     25AA        2         0
+                text41                             1424     1424       CA         0
+                text40                             24C4     24C4       18         0
+                text39                             258E     258E        A         0
+                text38                             2584     2584        A         0
+                text37                             23AA     23AA       24         0
+                text36                             2302     2302       2E         0
+                text35                             2450     2450       1E         0
+                text34                             2092     2092       4A         0
+                text33                             257A     257A        A         0
+                text32                             2508     2508       12         0
+                text31                             2570     2570        A         0
+                text30                             1F10     1F10       4E         0
+                text29                             2384     2384       26         0
+                text28                             2432     2432       1E         0
+                text27                             259E     259E        4         0
+                text26                             1B88     1B88       7C         0
+                text25                             1CE4     1CE4       68         0
+                text24                             23CE     23CE       22         0
+                text23                             2126     2126       48         0
+                text22                             24DC     24DC       16         0
+                text21                             15B6     15B6       B8         0
+                text20                             2566     2566        A         0
+                text19                             255C     255C        A         0
+                text18                             2552     2552        A         0
+                text17                             252C     252C        E         0
+                text16                             25A8     25A8        2         0
+                text15                             17D8     17D8       B4         0
+                text14                             25A6     25A6        2         0
+                text13                             216E     216E       46         0
+                text12                             2548     2548        A         0
+                text11                             2412     2412       20         0
+                text10                             2048     2048       4A         0
+                text9                              1724     1724       B4         0
+                text8                              21F2     21F2       3C         0
+                text7                              24A8     24A8       1C         0
+                text6                              126C     126C       E4         0
+                text5                              25A4     25A4        2         0
+                text4                              248C     248C       1C         0
+                text3                              1A70     1A70       92         0
+                text2                              1DAC     1DAC       5C         0
+                text1                              1350     1350       D4         0
+                text0                              2330     2330       2A         0
+                cinit                              1940     1940       9A         0
+                idataBANK0                         2598     2598        6         0
+                idataCOMRAM                        25A2     25A2        2         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallconst                          D00      D00       1A         0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+                cstackCOMRAM                          1        1       2A         1
+                dataCOMRAM                           53       53        2         1
+                bssCOMRAM                            2B       2B       28         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+                bssBIGRAM                           496      496      1B8         1
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          AB       AB       30         1
+                dataBANK0                            DB       DB        6         1
+                bssBANK0                             60       60       4B         1
+
+        CLASS   BANK1          
+                bssBANK1                            100      100       D4         1
+
+        CLASS   BANK2          
+                bssBANK2                            200      200       A2         1
+
+        CLASS   BANK3          
+                bssBANK3                            300      300       FA         1
+
+        CLASS   BANK4          
+                bssBANK4                            400      400       96         1
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        E         0
+
+        CLASS   IDLOC          
+                idloc                            200000   200000        8         0
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                cstackCOMRAM                   000001  000054  000055         1       1  COMRAM  
+                intcode                        000008  000014  00001C         4       0  CODE    
+                bssBANK0                       000060  000081  0000E1        60       1  BANK0   
+                bssBANK1                       000100  0000D4  0001D4       100       1  BANK1   
+                bssBANK2                       000200  0000A2  0002A2       200       1  BANK2   
+                bssBANK3                       000300  0000FA  0003FA       300       1  BANK3   
+                bssBANK4                       000400  000096  000496       400       1  BANK4   
+                bssBIGRAM                      000496  0001B8  00064E       496       1  BIGRAM  
+                smallconst                     000D00  00001A  000D1A       680       0  SMALLCON
+                text66                         000D1A  001892  0025AC       68D       0  CODE    
+                idloc                          200000  000008  200008    200000       0  IDLOC   
+                config                         300000  00000E  30000E    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0000E1-0000FF               1F
+        BANK1            0001D4-0001FF               2C
+        BANK10           000A00-000AFF              100
+        BANK11           000B00-000BFF              100
+        BANK12           000C00-000CFF              100
+        BANK2            0002A2-0002FF               5E
+        BANK3            0003FA-0003FF                6
+        BANK6            00064E-0006FF               B2
+        BANK7            000700-0007FF              100
+        BANK8            000800-0008FF              100
+        BANK9            000900-0009FF              100
+        BIGRAM           000055-00005F                B
+                         0000E1-0000FF               1F
+                         0001D4-0001FF               2C
+                         0002A2-0002FF               5E
+                         0003FA-0003FF                6
+                         00064E-000CFF              6B2
+        CODE             000004-000007                4
+                         00001C-000CFF              CE4
+                         0025AC-00FFFF             DA54
+        COMRAM           000055-00005F                B
+        CONST            000004-000007                4
+                         00001C-000CFF              CE4
+                         0025AC-00FFFF             DA54
+        EEDATA           F00000-F003FF              400
+        MEDIUMCONST      0025AC-00FFFF             DA54
+        RAM              0000E1-0000FF               1F
+                         0001D4-0001FF               2C
+                         0002A2-0002FF               5E
+                         0003FA-0003FF                6
+                         00064E-000CFF              100
+        SFR              000D00-000FFF              100
+        SMALLCONST       0025AC-00FFFF              100
+
+                                  Symbol Table
+
+?_Async                                cstackBANK0  0000BB
+?_AsyncBlank                           cstackCOMRAM 000019
+?_CheckParity                          cstackCOMRAM 000009
+?_Count                                cstackCOMRAM 000001
+?_Crash                                cstackBANK0  0000AB
+?_GetParity                            cstackBANK0  0000AB
+?_JWireBegin                           cstackBANK0  0000AB
+?_JWireOnReceive                       cstackBANK0  0000AB
+?_JWireOnRequest                       cstackBANK0  0000AB
+?_JWireRespond                         cstackCOMRAM 000011
+?_Send                                 cstackBANK0  0000C7
+?_SerialWrite                          cstackBANK0  0000BB
+?_SetInterval                          cstackBANK0  0000B3
+?_SetParity                            cstackBANK0  0000B3
+?_TwitterAddWireSlave                  cstackBANK0  0000AD
+?_TwitterRegisterSubject               cstackBANK0  0000AB
+?_TwitterSendSerial                    cstackBANK0  0000BF
+?_TwitterSendWireMaster                cstackBANK0  0000C3
+?_TwitterSendWireSlave                 cstackBANK0  0000BB
+?_TwitterSerialBegin                   cstackBANK0  0000AB
+?_TwitterWireMasterBegin               cstackBANK0  0000AB
+?_TwitterWireSlaveBegin                cstackBANK0  0000AB
+?_WireGetLegacy                        cstackBANK0  0000AB
+?_WireSend                             cstackBANK0  0000BB
+?___awdiv                              cstackBANK0  0000AB
+?___awmod                              cstackBANK0  0000AB
+?___wmul                               cstackBANK0  0000AB
+?_go                                   cstackBANK0  0000C6
+?_memcpy                               cstackBANK0  0000B1
+?_send                                 cstackBANK0  0000BF
+?i2_Async                              cstackCOMRAM 000011
+?i2_Crash                              cstackCOMRAM 000001
+?i2_GetParity                          cstackCOMRAM 000001
+?i2___wmul                             cstackCOMRAM 000001
+?i2_memcpy                             cstackCOMRAM 000007
+Async@data                             cstackBANK0  0000BD
+Async@function                         cstackBANK0  0000BB
+Async@i                                cstackBANK0  0000C1
+Async@len                              cstackBANK0  0000BF
+AsyncBegin@i                           cstackBANK0  0000B1
+AsyncBlank@function                    cstackCOMRAM 000019
+AsyncTick@i                            cstackBANK0  0000D9
+CheckParity@packet                     cstackCOMRAM 000009
+Count@number                           cstackCOMRAM 000001
+CountUp@count                          bssCOMRAM    00002B
+Crash@id                               cstackBANK0  0000AB
+GetParity@p                            cstackBANK0  0000B1
+GetParity@packet                       cstackBANK0  0000AB
+GetParity@parity                       cstackBANK0  0000B0
+HandleMention@packet                   cstackBANK0  0000C9
+IntervalTick@i                         cstackBANK0  0000B3
+IntervalTick@time                      bssCOMRAM    00002D
+JWireBegin@id                          cstackBANK0  0000AB
+JWireOnInterrupt@data                  cstackCOMRAM 000019
+JWireOnReceive@callbackToUse           cstackBANK0  0000AB
+JWireOnRequest@callbackToUse           cstackBANK0  0000AB
+JWireRespond@len                       cstackCOMRAM 000011
+JWireRespond@msg                       cstackCOMRAM 000013
+OnSerialInterrupt@data                 bssCOMRAM    000049
+PollCallbackLegacyA@copy               cstackBANK0  0000CF
+PollCallbackLegacyA@packet             cstackBANK0  0000CD
+Send@packet                            cstackBANK0  0000C7
+SerialWrite@data                       cstackBANK0  0000BB
+SerialWrite@len                        cstackBANK0  0000BD
+SetInterval@callbackToUse              cstackBANK0  0000B5
+SetInterval@delayInMs                  cstackBANK0  0000B3
+SetInterval@hasLoaded                  bssBANK0     000080
+SetInterval@i                          cstackBANK0  0000B7
+SetInterval@i_616                      cstackBANK0  0000B9
+SetParity@packet                       cstackBANK0  0000B3
+TwitterAddWireSlave@id                 cstackBANK0  0000AD
+TwitterOnReceive@packet                cstackBANK0  0000CB
+TwitterRegisterSubject@_subject        cstackBANK0  0000AD
+TwitterRegisterSubject@callback        cstackBANK0  0000AB
+TwitterRegisterSubject@subject         cstackBANK0  0000AE
+TwitterSendSerial@packet               cstackBANK0  0000BF
+TwitterSendWireMaster@packet           cstackBANK0  0000C3
+TwitterSendWireSlave@packet            cstackBANK0  0000BB
+TwitterSerialBegin@_twitterReceive     cstackBANK0  0000AB
+TwitterSerialOnInterrupt@count         bssCOMRAM    00004A
+TwitterSignUp@_name                    cstackBANK0  0000BB
+TwitterWireMasterBegin@_twitterReceive cstackBANK0  0000AB
+TwitterWireSlaveBegin@_twitterReceive  cstackBANK0  0000AB
+WireGetLegacy@address                  cstackBANK0  0000AB
+WireGetLegacy@callback                 cstackBANK0  0000AF
+WireGetLegacy@len                      cstackBANK0  0000AD
+WireSend@address                       cstackBANK0  0000BB
+WireSend@callback                      cstackBANK0  0000C1
+WireSend@data                          cstackBANK0  0000BD
+WireSend@len                           cstackBANK0  0000BF
+_ACKEN                                 (abs)        007E2C
+_Async                                 text15       0017D8
+_AsyncBegin                            text23       002126
+_AsyncBlank                            text64       00246E
+_AsyncMessage                          bssBANK0     000076
+_AsyncTick                             text1        001350
+_AsyncTick$2263                        cstackBANK0  0000D7
+_BRG16                                 (abs)        007DC3
+_BRGH                                  (abs)        007D62
+_CKP                                   (abs)        007E34
+_CREN                                  (abs)        007D5C
+_CheckParity                           text61       00235A
+_Count                                 text60       00251A
+_CountUp                               text24       0023CE
+_Crash                                 text22       0024DC
+_FERR                                  (abs)        007D5A
+_GIE                                   (abs)        007F97
+_GetParity                             text44       001F5E
+_HandleHashtag                         text16       0025A8
+_HandleMention                         text9        001724
+_HandleReads                           text65       000E84
+_HandleReadsLegacy                     text66       000D1A
+_HandleSends                           text63       00113A
+_INTCONbits                            (abs)        000FF2
+_IncommingBuffer                       bssBANK1     0001A2
+_IntervalTick                          text3        001A70
+_IsCrashed                             bssCOMRAM    00002F
+_JWireBegin                            text37       0023AA
+_JWireOnInterrupt                      text54       000FE8
+_JWireOnReceive                        text39       00258E
+_JWireOnRequest                        text38       002584
+_JWireRespond                          text56       0023F0
+_LATA                                  (abs)        000F89
+_LB3                                   (abs)        007C53
+_LB4                                   (abs)        007C54
+_LB5                                   (abs)        007C55
+_LB6                                   (abs)        007C56
+_LB7                                   (abs)        007C57
+_LedCounterBegin                       text40       0024C4
+_MacawBegin                            text27       00259E
+_OERR                                  (abs)        007D59
+_OSCCONbits                            (abs)        000FD3
+_OnIntervalInterrupt                   text53       00253A
+_OnReceive                             text4        00248C
+_OnRequest                             text55       00222E
+_OnSerialInterrupt                     text58       001FAC
+_PEIE                                  (abs)        007F96
+_PEN                                   (abs)        007E2A
+_PORTA                                 (abs)        000F80
+_PollCallbackLegacyA                   text6        00126C
+_PollCallbackLegacyB                   text5        0025A4
+_PollSlaves                            text25       001CE4
+_RB3                                   (abs)        007C0B
+_RB4                                   (abs)        007C0C
+_RB5                                   (abs)        007C0D
+_RB6                                   (abs)        007C0E
+_RB7                                   (abs)        007C0F
+_RCEN                                  (abs)        007E2B
+_RCIE                                  (abs)        007CED
+_RCIF                                  (abs)        007CF5
+_RCREG                                 (abs)        000FAE
+_RX9                                   (abs)        007D5E
+_ResetAllInterfaces                    text17       00252C
+_SEN                                   (abs)        007E28
+_SENDB                                 (abs)        007D63
+_SMP                                   (abs)        007E3F
+_SPBRG                                 (abs)        000FAF
+_SPEN                                  (abs)        007D5F
+_SSPADD                                (abs)        000FC8
+_SSPBUF                                (abs)        000FC9
+_SSPCON1                               (abs)        000FC6
+_SSPEN                                 (abs)        007E35
+_SSPIE                                 (abs)        007CEB
+_SSPIF                                 (abs)        007CF3
+_SSPM0                                 (abs)        007E30
+_SSPM1                                 (abs)        007E31
+_SSPM2                                 (abs)        007E32
+_SSPM3                                 (abs)        007E33
+_SSPSTAT                               (abs)        000FC7
+_SSPSTATbits                           (abs)        000FC7
+_SYNC                                  (abs)        007D64
+_Send                                  text10       002048
+_SerialBegin                           text35       002450
+_SerialWrite                           text47       001C04
+_SerialWriteInterrupt                  text62       001C76
+_SetInterval                           text41       001424
+_SetParity                             text11       002412
+_SuperSimpleSerialBegin                text28       002432
+_T0CONbits                             (abs)        000FD5
+_TRISA                                 (abs)        000F92
+_TRISB                                 (abs)        000F93
+_TRISBbits                             (abs)        000F93
+_TRISC3                                (abs)        007CA3
+_TRISC4                                (abs)        007CA4
+_TRISCbits                             (abs)        000F94
+_TX9                                   (abs)        007D66
+_TXEN                                  (abs)        007D65
+_TXIE                                  (abs)        007CEC
+_TXIF                                  (abs)        007CF4
+_TXREG                                 (abs)        000FAD
+_TryToHelp                             text43       001E64
+_TwitterAddWireSlave                   text36       002302
+_TwitterOnReceive                      text8        0021F2
+_TwitterRegisterSubject                text34       002092
+_TwitterSendSerial                     text14       0025A6
+_TwitterSendWireMaster                 text12       002548
+_TwitterSendWireSlave                  text13       00216E
+_TwitterSerialBegin                    text31       002570
+_TwitterSerialOnInterrupt              text59       00166E
+_TwitterSerialOnReceive                text7        0024A8
+_TwitterSerialReset                    text18       002552
+_TwitterSignUp                         text30       001F10
+_TwitterWireMasterBegin                text32       002508
+_TwitterWireMasterReset                text19       00255C
+_TwitterWireSlaveBegin                 text33       00257A
+_TwitterWireSlaveReset                 text20       002566
+_WireGetLegacy                         text26       001B88
+_WireOnInterrupt                       text57       0021B4
+_WireSend                              text21       0015B6
+__CFG_BBSIZ$1024                       (abs)        000000
+__CFG_BOREN$OFF                        (abs)        000000
+__CFG_BORV$3                           (abs)        000000
+__CFG_FCMEN$OFF                        (abs)        000000
+__CFG_IESO$OFF                         (abs)        000000
+__CFG_LPT1OSC$OFF                      (abs)        000000
+__CFG_LVP$OFF                          (abs)        000000
+__CFG_MCLRE$ON                         (abs)        000000
+__CFG_OSC$IRCIO7                       (abs)        000000
+__CFG_PBADEN$OFF                       (abs)        000000
+__CFG_PWRT$OFF                         (abs)        000000
+__CFG_STVREN$OFF                       (abs)        000000
+__CFG_WDT$OFF                          (abs)        000000
+__CFG_WDTPS$32768                      (abs)        000000
+__HRAM                                 (abs)        000000
+__Habs1                                abs1         000000
+__Hbank0                               bank0        000000
+__Hbank1                               bank1        000000
+__Hbank10                              bank10       000000
+__Hbank11                              bank11       000000
+__Hbank12                              bank12       000000
+__Hbank2                               bank2        000000
+__Hbank3                               bank3        000000
+__Hbank4                               bank4        000000
+__Hbank5                               bank5        000000
+__Hbank6                               bank6        000000
+__Hbank7                               bank7        000000
+__Hbank8                               bank8        000000
+__Hbank9                               bank9        000000
+__Hbigbss                              bigbss       000000
+__Hbigdata                             bigdata      000000
+__Hbigram                              bigram       000000
+__Hbss                                 bss          000000
+__HbssBANK0                            bssBANK0     000000
+__HbssBANK1                            bssBANK1     000000
+__HbssBANK2                            bssBANK2     000000
+__HbssBANK3                            bssBANK3     000000
+__HbssBANK4                            bssBANK4     000000
+__HbssBIGRAM                           bssBIGRAM    000000
+__HbssCOMRAM                           bssCOMRAM    000000
+__Hcinit                               cinit        000000
+__Hclrtext                             clrtext      000000
+__Hcomram                              comram       000000
+__Hconfig                              config       30000E
+__Hconst                               const        000000
+__HcstackBANK0                         cstackBANK0  000000
+__HcstackCOMRAM                        cstackCOMRAM 000000
+__Hdata                                data         000000
+__HdataBANK0                           dataBANK0    000000
+__HdataCOMRAM                          dataCOMRAM   000000
+__Heeprom_data                         eeprom_data  000000
+__Hend_init                            end_init     00001C
+__Hfarbss                              farbss       000000
+__Hfardata                             fardata      000000
+__Hibigdata                            ibigdata     000000
+__Hidata                               idata        000000
+__HidataBANK0                          idataBANK0   000000
+__HidataCOMRAM                         idataCOMRAM  000000
+__Hidloc                               idloc        200008
+__Hifardata                            ifardata     000000
+__Hinit                                init         000018
+__Hintcode                             intcode      000018
+__Hintcode_body                        intcode_body 000000
+__Hintcodelo                           intcodelo    000018
+__Hintentry                            intentry     000000
+__Hintret                              intret       000000
+__Hintsave_regs                        intsave_regs 000000
+__Hirdata                              irdata       000000
+__Hmediumconst                         mediumconst  000000
+__Hnvbit                               nvbit        000000
+__Hnvrram                              nvrram       000000
+__Hparam                               rparam       000000
+__Hpowerup                             powerup      000018
+__Hram                                 ram          000000
+__Hramtop                              ramtop       000D00
+__Hrbit                                rbit         000000
+__Hrbss                                rbss         000000
+__Hrdata                               rdata        000000
+__Hreset_vec                           reset_vec    000004
+__Hrparam                              rparam       000000
+__Hsfr                                 sfr          000000
+__Hsmallconst                          smallconst   000D1A
+__Hstruct                              struct       000000
+__Htemp                                temp         000000
+__Htext                                text         000000
+__Htext0                               text0        000000
+__Htext1                               text1        000000
+__Htext10                              text10       000000
+__Htext11                              text11       000000
+__Htext12                              text12       000000
+__Htext13                              text13       000000
+__Htext14                              text14       000000
+__Htext15                              text15       000000
+__Htext16                              text16       000000
+__Htext17                              text17       000000
+__Htext18                              text18       000000
+__Htext19                              text19       000000
+__Htext2                               text2        000000
+__Htext20                              text20       000000
+__Htext21                              text21       000000
+__Htext22                              text22       000000
+__Htext23                              text23       000000
+__Htext24                              text24       000000
+__Htext25                              text25       000000
+__Htext26                              text26       000000
+__Htext27                              text27       000000
+__Htext28                              text28       000000
+__Htext29                              text29       000000
+__Htext3                               text3        000000
+__Htext30                              text30       000000
+__Htext31                              text31       000000
+__Htext32                              text32       000000
+__Htext33                              text33       000000
+__Htext34                              text34       000000
+__Htext35                              text35       000000
+__Htext36                              text36       000000
+__Htext37                              text37       000000
+__Htext38                              text38       000000
+__Htext39                              text39       000000
+__Htext4                               text4        000000
+__Htext40                              text40       000000
+__Htext41                              text41       000000
+__Htext42                              text42       000000
+__Htext43                              text43       000000
+__Htext44                              text44       000000
+__Htext45                              text45       000000
+__Htext46                              text46       000000
+__Htext47                              text47       000000
+__Htext48                              text48       000000
+__Htext49                              text49       000000
+__Htext5                               text5        000000
+__Htext50                              text50       000000
+__Htext51                              text51       000000
+__Htext53                              text53       000000
+__Htext54                              text54       000000
+__Htext55                              text55       000000
+__Htext56                              text56       000000
+__Htext57                              text57       000000
+__Htext58                              text58       000000
+__Htext59                              text59       000000
+__Htext6                               text6        000000
+__Htext60                              text60       000000
+__Htext61                              text61       000000
+__Htext62                              text62       000000
+__Htext63                              text63       000000
+__Htext64                              text64       000000
+__Htext65                              text65       000000
+__Htext66                              text66       000000
+__Htext67                              text67       000000
+__Htext68                              text68       000000
+__Htext69                              text69       000000
+__Htext7                               text7        000000
+__Htext70                              text70       000000
+__Htext71                              text71       000000
+__Htext72                              text72       000000
+__Htext73                              text73       000000
+__Htext8                               text8        000000
+__Htext9                               text9        000000
+__LRAM                                 (abs)        000001
+__Labs1                                abs1         000000
+__Lbank0                               bank0        000000
+__Lbank1                               bank1        000000
+__Lbank10                              bank10       000000
+__Lbank11                              bank11       000000
+__Lbank12                              bank12       000000
+__Lbank2                               bank2        000000
+__Lbank3                               bank3        000000
+__Lbank4                               bank4        000000
+__Lbank5                               bank5        000000
+__Lbank6                               bank6        000000
+__Lbank7                               bank7        000000
+__Lbank8                               bank8        000000
+__Lbank9                               bank9        000000
+__Lbigbss                              bigbss       000000
+__Lbigdata                             bigdata      000000
+__Lbigram                              bigram       000000
+__Lbss                                 bss          000000
+__LbssBANK0                            bssBANK0     000000
+__LbssBANK1                            bssBANK1     000000
+__LbssBANK2                            bssBANK2     000000
+__LbssBANK3                            bssBANK3     000000
+__LbssBANK4                            bssBANK4     000000
+__LbssBIGRAM                           bssBIGRAM    000000
+__LbssCOMRAM                           bssCOMRAM    000000
+__Lcinit                               cinit        000000
+__Lclrtext                             clrtext      000000
+__Lcomram                              comram       000000
+__Lconfig                              config       300000
+__Lconst                               const        000000
+__LcstackBANK0                         cstackBANK0  000000
+__LcstackCOMRAM                        cstackCOMRAM 000000
+__Ldata                                data         000000
+__LdataBANK0                           dataBANK0    000000
+__LdataCOMRAM                          dataCOMRAM   000000
+__Leeprom_data                         eeprom_data  000000
+__Lend_init                            end_init     000018
+__Lfarbss                              farbss       000000
+__Lfardata                             fardata      000000
+__Libigdata                            ibigdata     000000
+__Lidata                               idata        000000
+__LidataBANK0                          idataBANK0   000000
+__LidataCOMRAM                         idataCOMRAM  000000
+__Lidloc                               idloc        200000
+__Lifardata                            ifardata     000000
+__Linit                                init         000018
+__Lintcode                             intcode      000008
+__Lintcode_body                        intcode_body 000000
+__Lintcodelo                           intcodelo    000018
+__Lintentry                            intentry     000000
+__Lintret                              intret       000000
+__Lintsave_regs                        intsave_regs 000000
+__Lirdata                              irdata       000000
+__Lmediumconst                         mediumconst  000000
+__Lnvbit                               nvbit        000000
+__Lnvrram                              nvrram       000000
+__Lparam                               rparam       000000
+__Lpowerup                             powerup      000018
+__Lram                                 ram          000000
+__Lramtop                              ramtop       000D00
+__Lrbit                                rbit         000000
+__Lrbss                                rbss         000000
+__Lrdata                               rdata        000000
+__Lreset_vec                           reset_vec    000000
+__Lrparam                              rparam       000000
+__Lsfr                                 sfr          000000
+__Lsmallconst                          smallconst   000D00
+__Lstruct                              struct       000000
+__Ltemp                                temp         000000
+__Ltext                                text         000000
+__Ltext0                               text0        000000
+__Ltext1                               text1        000000
+__Ltext10                              text10       000000
+__Ltext11                              text11       000000
+__Ltext12                              text12       000000
+__Ltext13                              text13       000000
+__Ltext14                              text14       000000
+__Ltext15                              text15       000000
+__Ltext16                              text16       000000
+__Ltext17                              text17       000000
+__Ltext18                              text18       000000
+__Ltext19                              text19       000000
+__Ltext2                               text2        000000
+__Ltext20                              text20       000000
+__Ltext21                              text21       000000
+__Ltext22                              text22       000000
+__Ltext23                              text23       000000
+__Ltext24                              text24       000000
+__Ltext25                              text25       000000
+__Ltext26                              text26       000000
+__Ltext27                              text27       000000
+__Ltext28                              text28       000000
+__Ltext29                              text29       000000
+__Ltext3                               text3        000000
+__Ltext30                              text30       000000
+__Ltext31                              text31       000000
+__Ltext32                              text32       000000
+__Ltext33                              text33       000000
+__Ltext34                              text34       000000
+__Ltext35                              text35       000000
+__Ltext36                              text36       000000
+__Ltext37                              text37       000000
+__Ltext38                              text38       000000
+__Ltext39                              text39       000000
+__Ltext4                               text4        000000
+__Ltext40                              text40       000000
+__Ltext41                              text41       000000
+__Ltext42                              text42       000000
+__Ltext43                              text43       000000
+__Ltext44                              text44       000000
+__Ltext45                              text45       000000
+__Ltext46                              text46       000000
+__Ltext47                              text47       000000
+__Ltext48                              text48       000000
+__Ltext49                              text49       000000
+__Ltext5                               text5        000000
+__Ltext50                              text50       000000
+__Ltext51                              text51       000000
+__Ltext53                              text53       000000
+__Ltext54                              text54       000000
+__Ltext55                              text55       000000
+__Ltext56                              text56       000000
+__Ltext57                              text57       000000
+__Ltext58                              text58       000000
+__Ltext59                              text59       000000
+__Ltext6                               text6        000000
+__Ltext60                              text60       000000
+__Ltext61                              text61       000000
+__Ltext62                              text62       000000
+__Ltext63                              text63       000000
+__Ltext64                              text64       000000
+__Ltext65                              text65       000000
+__Ltext66                              text66       000000
+__Ltext67                              text67       000000
+__Ltext68                              text68       000000
+__Ltext69                              text69       000000
+__Ltext7                               text7        000000
+__Ltext70                              text70       000000
+__Ltext71                              text71       000000
+__Ltext72                              text72       000000
+__Ltext73                              text73       000000
+__Ltext8                               text8        000000
+__Ltext9                               text9        000000
+__S0                                   (abs)        30000E
+__S1                                   (abs)        00064E
+___awdiv                               text49       0019DA
+___awdiv@counter                       cstackBANK0  0000AF
+___awdiv@dividend                      cstackBANK0  0000AB
+___awdiv@divisor                       cstackBANK0  0000AD
+___awdiv@quotient                      cstackBANK0  0000B1
+___awdiv@sign                          cstackBANK0  0000B0
+___awmod                               text50       001B02
+___awmod@counter                       cstackBANK0  0000AF
+___awmod@dividend                      cstackBANK0  0000AB
+___awmod@divisor                       cstackBANK0  0000AD
+___awmod@sign                          cstackBANK0  0000B0
+___wmul                                text51       002266
+___wmul@multiplicand                   cstackBANK0  0000AD
+___wmul@multiplier                     cstackBANK0  0000AB
+___wmul@product                        cstackBANK0  0000AF
+__accesstop                            (abs)        000060
+__activetblptr                         (abs)        000003
+__end_of_Async                         text15       00188C
+__end_of_AsyncBegin                    text23       00216E
+__end_of_AsyncBlank                    text64       00248C
+__end_of_AsyncTick                     text1        001424
+__end_of_CheckParity                   text61       002384
+__end_of_Count                         text60       00252C
+__end_of_CountUp                       text24       0023F0
+__end_of_Crash                         text23       002126
+__end_of_GetParity                     text44       001FAC
+__end_of_HandleHashtag                 text16       0025AA
+__end_of_HandleMention                 text9        0017D8
+__end_of_HandleReads                   text65       000FE8
+__end_of_HandleReadsLegacy             text66       000E84
+__end_of_HandleSends                   text63       00126C
+__end_of_IntervalTick                  text3        001B02
+__end_of_JWireBegin                    text37       0023CE
+__end_of_JWireOnInterrupt              text54       00113A
+__end_of_JWireOnReceive                text39       002598
+__end_of_JWireOnRequest                text38       00258E
+__end_of_JWireRespond                  text56       002412
+__end_of_LedCounterBegin               text40       0024DC
+__end_of_MacawBegin                    text27       0025A2
+__end_of_OnIntervalInterrupt           text53       002548
+__end_of_OnReceive                     text4        0024A8
+__end_of_OnRequest                     text55       002266
+__end_of_OnSerialInterrupt             text58       001FFA
+__end_of_PollCallbackLegacyA           text6        001350
+__end_of_PollCallbackLegacyB           text5        0025A6
+__end_of_PollSlaves                    text25       001D4C
+__end_of_ResetAllInterfaces            text17       00253A
+__end_of_Send                          text10       002092
+__end_of_SerialBegin                   text35       00246E
+__end_of_SerialWrite                   text47       001C76
+__end_of_SerialWriteInterrupt          text62       001CE4
+__end_of_SetInterval                   text41       0014EE
+__end_of_SetParity                     text11       002432
+__end_of_SuperSimpleSerialBegin        text28       002450
+__end_of_TryToHelp                     text43       001EBA
+__end_of_TwitterAddWireSlave           text36       002330
+__end_of_TwitterOnReceive              text8        00222E
+__end_of_TwitterRegisterSubject        text34       0020DC
+__end_of_TwitterSendSerial             text14       0025A8
+__end_of_TwitterSendWireMaster         text12       002552
+__end_of_TwitterSendWireSlave          text13       0021B4
+__end_of_TwitterSerialBegin            text31       00257A
+__end_of_TwitterSerialOnInterrupt      text59       001724
+__end_of_TwitterSerialOnReceive        text7        0024C4
+__end_of_TwitterSerialReset            text18       00255C
+__end_of_TwitterSignUp                 text30       001F5E
+__end_of_TwitterWireMasterBegin        text32       00251A
+__end_of_TwitterWireMasterReset        text19       002566
+__end_of_TwitterWireSlaveBegin         text33       002584
+__end_of_TwitterWireSlaveReset         text20       002570
+__end_of_WireGetLegacy                 text26       001C04
+__end_of_WireOnInterrupt               text57       0021F2
+__end_of_WireSend                      text21       00166E
+__end_of___awdiv                       text49       001A70
+__end_of___awmod                       text50       001B88
+__end_of___wmul                        text51       00229C
+__end_of__initialization               cinit        0019D4
+__end_of__stringdata                   smallconst   000D18
+__end_of_go                            text45       002126
+__end_of_main                          text1        001350
+__end_of_memcpy                        text48       001DAC
+__end_of_onInterrupt                   intcode_body 0015B6
+__end_of_onLoop                        text42       0025AC
+__end_of_onMove                        text2        001E08
+__end_of_onSetup                       text29       0023AA
+__end_of_send                          text46       002302
+__end_ofi2_Async                       text67       001940
+__end_ofi2_Crash                       text70       001FFA
+__end_ofi2_GetParity                   text70       002048
+__end_ofi2_TryToHelp                   text68       001F10
+__end_ofi2___wmul                      text72       0022D2
+__end_ofi2_memcpy                      text71       001E64
+__initialization                       cinit        001940
+__mediumconst                          mediumconst  000000
+__pbssBANK0                            bssBANK0     000060
+__pbssBANK1                            bssBANK1     000100
+__pbssBANK2                            bssBANK2     000200
+__pbssBANK3                            bssBANK3     000300
+__pbssBANK4                            bssBANK4     000400
+__pbssBIGRAM                           bssBIGRAM    000496
+__pbssCOMRAM                           bssCOMRAM    00002B
+__pcinit                               cinit        001940
+__pcstackBANK0                         cstackBANK0  0000AB
+__pcstackCOMRAM                        cstackCOMRAM 000001
+__pdataBANK0                           dataBANK0    0000DB
+__pdataCOMRAM                          dataCOMRAM   000053
+__pidataBANK0                          idataBANK0   002598
+__pidataCOMRAM                         idataCOMRAM  0025A2
+__pintcode                             intcode      000008
+__pintcode_body                        intcode_body 0014EE
+__psmallconst                          smallconst   000D00
+__ptext0                               text0        002330
+__ptext1                               text1        001350
+__ptext10                              text10       002048
+__ptext11                              text11       002412
+__ptext12                              text12       002548
+__ptext13                              text13       00216E
+__ptext14                              text14       0025A6
+__ptext15                              text15       0017D8
+__ptext16                              text16       0025A8
+__ptext17                              text17       00252C
+__ptext18                              text18       002552
+__ptext19                              text19       00255C
+__ptext2                               text2        001DAC
+__ptext20                              text20       002566
+__ptext21                              text21       0015B6
+__ptext22                              text22       0024DC
+__ptext23                              text23       002126
+__ptext24                              text24       0023CE
+__ptext25                              text25       001CE4
+__ptext26                              text26       001B88
+__ptext27                              text27       00259E
+__ptext28                              text28       002432
+__ptext29                              text29       002384
+__ptext3                               text3        001A70
+__ptext30                              text30       001F10
+__ptext31                              text31       002570
+__ptext32                              text32       002508
+__ptext33                              text33       00257A
+__ptext34                              text34       002092
+__ptext35                              text35       002450
+__ptext36                              text36       002302
+__ptext37                              text37       0023AA
+__ptext38                              text38       002584
+__ptext39                              text39       00258E
+__ptext4                               text4        00248C
+__ptext40                              text40       0024C4
+__ptext41                              text41       001424
+__ptext42                              text42       0025AA
+__ptext43                              text43       001E64
+__ptext44                              text44       001F5E
+__ptext45                              text45       0020DC
+__ptext46                              text46       0022D2
+__ptext47                              text47       001C04
+__ptext48                              text48       001D4C
+__ptext49                              text49       0019DA
+__ptext5                               text5        0025A4
+__ptext50                              text50       001B02
+__ptext51                              text51       002266
+__ptext53                              text53       00253A
+__ptext54                              text54       000FE8
+__ptext55                              text55       00222E
+__ptext56                              text56       0023F0
+__ptext57                              text57       0021B4
+__ptext58                              text58       001FAC
+__ptext59                              text59       00166E
+__ptext6                               text6        00126C
+__ptext60                              text60       00251A
+__ptext61                              text61       00235A
+__ptext62                              text62       001C76
+__ptext63                              text63       00113A
+__ptext64                              text64       00246E
+__ptext65                              text65       000E84
+__ptext66                              text66       000D1A
+__ptext67                              text67       00188C
+__ptext68                              text68       001EBA
+__ptext69                              text69       0024F2
+__ptext7                               text7        0024A8
+__ptext70                              text70       001FFA
+__ptext71                              text71       001E08
+__ptext72                              text72       00229C
+__ptext73                              text73       000000
+__ptext8                               text8        0021F2
+__ptext9                               text9        001724
+__ramtop                               ramtop       000D00
+__size_of_Async                        (abs)        000000
+__size_of_AsyncBegin                   (abs)        000000
+__size_of_AsyncBlank                   (abs)        000000
+__size_of_AsyncTick                    (abs)        000000
+__size_of_CheckParity                  (abs)        000000
+__size_of_Count                        (abs)        000000
+__size_of_CountUp                      (abs)        000000
+__size_of_Crash                        (abs)        000000
+__size_of_GetParity                    (abs)        000000
+__size_of_HandleHashtag                (abs)        000000
+__size_of_HandleMention                (abs)        000000
+__size_of_HandleReads                  (abs)        000000
+__size_of_HandleReadsLegacy            (abs)        000000
+__size_of_HandleSends                  (abs)        000000
+__size_of_IntervalTick                 (abs)        000000
+__size_of_JWireBegin                   (abs)        000000
+__size_of_JWireOnInterrupt             (abs)        000000
+__size_of_JWireOnReceive               (abs)        000000
+__size_of_JWireOnRequest               (abs)        000000
+__size_of_JWireRespond                 (abs)        000000
+__size_of_LedCounterBegin              (abs)        000000
+__size_of_MacawBegin                   (abs)        000000
+__size_of_OnIntervalInterrupt          (abs)        000000
+__size_of_OnReceive                    (abs)        000000
+__size_of_OnRequest                    (abs)        000000
+__size_of_OnSerialInterrupt            (abs)        000000
+__size_of_PollCallbackLegacyA          (abs)        000000
+__size_of_PollCallbackLegacyB          (abs)        000000
+__size_of_PollSlaves                   (abs)        000000
+__size_of_ResetAllInterfaces           (abs)        000000
+__size_of_Send                         (abs)        000000
+__size_of_SerialBegin                  (abs)        000000
+__size_of_SerialWrite                  (abs)        000000
+__size_of_SerialWriteInterrupt         (abs)        000000
+__size_of_SetInterval                  (abs)        000000
+__size_of_SetParity                    (abs)        000000
+__size_of_SuperSimpleSerialBegin       (abs)        000000
+__size_of_TryToHelp                    (abs)        000000
+__size_of_TwitterAddWireSlave          (abs)        000000
+__size_of_TwitterOnReceive             (abs)        000000
+__size_of_TwitterRegisterSubject       (abs)        000000
+__size_of_TwitterSendSerial            (abs)        000000
+__size_of_TwitterSendWireMaster        (abs)        000000
+__size_of_TwitterSendWireSlave         (abs)        000000
+__size_of_TwitterSerialBegin           (abs)        000000
+__size_of_TwitterSerialOnInterrupt     (abs)        000000
+__size_of_TwitterSerialOnReceive       (abs)        000000
+__size_of_TwitterSerialReset           (abs)        000000
+__size_of_TwitterSignUp                (abs)        000000
+__size_of_TwitterWireMasterBegin       (abs)        000000
+__size_of_TwitterWireMasterReset       (abs)        000000
+__size_of_TwitterWireSlaveBegin        (abs)        000000
+__size_of_TwitterWireSlaveReset        (abs)        000000
+__size_of_WireGetLegacy                (abs)        000000
+__size_of_WireOnInterrupt              (abs)        000000
+__size_of_WireSend                     (abs)        000000
+__size_of___awdiv                      (abs)        000000
+__size_of___awmod                      (abs)        000000
+__size_of___wmul                       (abs)        000000
+__size_of_go                           (abs)        000000
+__size_of_main                         (abs)        000000
+__size_of_memcpy                       (abs)        000000
+__size_of_onInterrupt                  (abs)        000000
+__size_of_onLoop                       (abs)        000000
+__size_of_onMove                       (abs)        000000
+__size_of_onSetup                      (abs)        000000
+__size_of_send                         (abs)        000000
+__size_ofi2_Async                      (abs)        000000
+__size_ofi2_Crash                      (abs)        000000
+__size_ofi2_GetParity                  (abs)        000000
+__size_ofi2_TryToHelp                  (abs)        000000
+__size_ofi2___wmul                     (abs)        000000
+__size_ofi2_memcpy                     (abs)        000000
+__smallconst                           smallconst   000D00
+__stringdata                           smallconst   000D00
+_buffer                                bssBANK3     000300
+_bufferReadPos                         bssCOMRAM    000031
+_bufferWritePos                        bssCOMRAM    000033
+_callback                              bssCOMRAM    000035
+_callbacks                             bssBIGRAM    000496
+_currentIncomming                      dataCOMRAM   000053
+_enabled                               dataBANK0    0000DB
+_go                                    text45       0020DC
+_hasRequest                            bssCOMRAM    000037
+_isDoneTransmitting                    bssBANK0     000078
+_jWireEnabled                          bssCOMRAM    000039
+_main                                  text0        002330
+_manualCount                           bssCOMRAM    00003B
+_memcpy                                text48       001D4C
+_name                                  bssBANK0     0000A9
+_onInterrupt                           intcode      000008
+_onLoop                                text42       0025AA
+_onMove                                text2        001DAC
+_onSetup                               text29       002384
+_personBeingHelped                     bssCOMRAM    00003D
+_receiveCallback                       bssCOMRAM    00003F
+_request                               bssBANK0     000095
+_requestCallback                       bssCOMRAM    000041
+_result                                bssBANK4     000400
+_send                                  text46       0022D2
+_slaveA                                bssCOMRAM    00004B
+_slaveB                                bssBANK0     0000A1
+_state                                 bssCOMRAM    000043
+_subjectA                              bssBANK0     000070
+_subjectB                              bssBANK0     000073
+_twitterReceive                        bssBANK0     00007A
+_wireMasterEnabled                     bssCOMRAM    000045
+_wireSendA                             bssBANK1     000100
+_wireSendB                             bssBANK2     000200
+_writeBuffer                           bssBANK3     000396
+_writeBufferPosition                   bssCOMRAM    000047
+_writeBufferPositionOpen               bssBANK0     00007C
+end_of_initialization                  cinit        0019D4
+go@leftForward                         cstackBANK0  0000C9
+go@leftPower                           cstackBANK0  0000C6
+go@rightForward                        cstackBANK0  0000C7
+go@rightPower                          cstackBANK0  0000C8
+i2Async@data                           cstackCOMRAM 000013
+i2Async@function                       cstackCOMRAM 000011
+i2Async@i                              cstackCOMRAM 000017
+i2Async@len                            cstackCOMRAM 000015
+i2Crash@id                             cstackCOMRAM 000001
+i2GetParity@p                          cstackCOMRAM 000007
+i2GetParity@packet                     cstackCOMRAM 000001
+i2GetParity@parity                     cstackCOMRAM 000006
+i2_Async                               text67       00188C
+i2_Crash                               text69       0024F2
+i2_GetParity                           text70       001FFA
+i2_TryToHelp                           text68       001EBA
+i2___wmul                              text72       00229C
+i2___wmul@multiplicand                 cstackCOMRAM 000003
+i2___wmul@multiplier                   cstackCOMRAM 000001
+i2___wmul@product                      cstackCOMRAM 000005
+i2_memcpy                              text71       001E08
+i2memcpy@d                             cstackCOMRAM 00000D
+i2memcpy@d1                            cstackCOMRAM 000007
+i2memcpy@n                             cstackCOMRAM 00000B
+i2memcpy@s                             cstackCOMRAM 00000F
+i2memcpy@s1                            cstackCOMRAM 000009
+int_func                               intcode_body 0014EE
+interval@callbacks                     bssBANK0     000060
+intlevel0                              text         000000
+intlevel1                              text         000000
+intlevel2                              text         000000
+intlevel3                              text         000000
+memcpy@d                               cstackBANK0  0000B7
+memcpy@d1                              cstackBANK0  0000B1
+memcpy@n                               cstackBANK0  0000B5
+memcpy@s                               cstackBANK0  0000B9
+memcpy@s1                              cstackBANK0  0000B3
+onMove@leftForward                     cstackBANK0  0000CA
+onMove@leftPower                       cstackBANK0  0000CB
+onMove@packet                          cstackBANK0  0000CE
+onMove@rightForward                    cstackBANK0  0000CC
+onMove@rightPower                      cstackBANK0  0000CD
+send@command                           cstackBANK0  0000C4
+send@data                              cstackBANK0  0000BF
+send@packet                            cstackBANK0  0000C0
+start                                  init         000018
+start_initialization                   cinit        001940
+twitterWireMaster@enabled              dataBANK0    0000DD
+twitterWireSlave@enabled               dataBANK0    0000DF
+twitterWireSlave@used                  bssBANK0     00007E
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 26 in file "jspic.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2  388[COMRAM] int 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:   14
+ This function calls:
+		_MacawBegin
+		_SuperSimpleSerialBegin
+		_AsyncBegin
+		_onSetup
+		_LedCounterBegin
+		_onLoop
+		_AsyncTick
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _AsyncTick *****************
+ Defined at:
+		line 34 in file "async.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2   46[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   13
+ This function calls:
+		___wmul
+		_onMove
+		_IntervalTick
+		_OnReceive
+		_PollCallbackLegacyB
+		_PollCallbackLegacyA
+		_TwitterSerialOnReceive
+		Absolute function
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _onMove *****************
+ Defined at:
+		line 44 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  packet          2   35[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+  rightPower      1   34[BANK0 ] unsigned char 
+  rightForward    1   33[BANK0 ] unsigned char 
+  leftPower       1   32[BANK0 ] unsigned char 
+  leftForward     1   31[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_go
+ This function is called by:
+		_onSetup
+		_AsyncTick
+ This function uses a non-reentrant model
+
+
+ *************** function _IntervalTick *****************
+ Defined at:
+		line 13 in file "interval.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2    8[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, pclat, tosl, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		___awmod
+		_CountUp
+		_PollSlaves
+		Absolute function
+ This function is called by:
+		_OnIntervalInterrupt
+		_AsyncTick
+ This function uses a non-reentrant model
+
+
+ *************** function _OnReceive *****************
+ Defined at:
+		line 30 in file "twitterWireSlave.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		Absolute function
+		_TwitterOnReceive
+ This function is called by:
+		_TwitterAddWireSlave
+		_AsyncTick
+ This function uses a non-reentrant model
+
+
+ *************** function _PollCallbackLegacyB *****************
+ Defined at:
+		line 77 in file "twitterWireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  copy            8    0        struct LEGACY_PACKET_T
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_PollSlaves
+		_AsyncTick
+ This function uses a non-reentrant model
+
+
+ *************** function _PollCallbackLegacyA *****************
+ Defined at:
+		line 59 in file "twitterWireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  copy            8   36[BANK0 ] struct LEGACY_PACKET_T
+  packet          2   34[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0      10       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      10       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		Absolute function
+		_TwitterOnReceive
+ This function is called by:
+		_PollSlaves
+		_AsyncTick
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSerialOnReceive *****************
+ Defined at:
+		line 11 in file "twitterSerial.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		Absolute function
+		_TwitterOnReceive
+ This function is called by:
+		_TwitterSerialOnInterrupt
+		_AsyncTick
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterOnReceive *****************
+ Defined at:
+		line 89 in file "twitter.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  packet          2   32[BANK0 ] PTR struct PACKETAlt_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_HandleMention
+		_HandleHashtag
+		_ResetAllInterfaces
+ This function is called by:
+		_TwitterSignUp
+		_TwitterSerialOnReceive
+		_PollCallbackLegacyA
+		_OnReceive
+ This function uses a non-reentrant model
+
+
+ *************** function _HandleMention *****************
+ Defined at:
+		line 61 in file "twitter.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  packet          2   30[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_Async
+		_Send
+ This function is called by:
+		_TwitterOnReceive
+ This function uses a non-reentrant model
+
+
+ *************** function _Send *****************
+ Defined at:
+		line 26 in file "twitter.c"
+ Parameters:    Size  Location     Type
+  packet          2   28[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_SetParity
+		_TwitterSendWireMaster
+		_TwitterSendWireSlave
+		_TwitterSendSerial
+ This function is called by:
+		_HandleMention
+ This function uses a non-reentrant model
+
+
+ *************** function _SetParity *****************
+ Defined at:
+		line 11 in file "parity.c"
+ Parameters:    Size  Location     Type
+  packet          2    8[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_GetParity
+ This function is called by:
+		_Send
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSendWireMaster *****************
+ Defined at:
+		line 99 in file "twitterWireMaster.c"
+ Parameters:    Size  Location     Type
+  packet          2   24[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Auto vars:     Size  Location     Type
+  name            2    0        short 
+ Return value:  Size  Location     Type
+                  2   24[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_WireSend
+ This function is called by:
+		_Send
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSendWireSlave *****************
+ Defined at:
+		line 42 in file "twitterWireSlave.c"
+ Parameters:    Size  Location     Type
+  packet          2   16[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   16[BANK0 ] int 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_memcpy
+ This function is called by:
+		_Send
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSendSerial *****************
+ Defined at:
+		line 48 in file "twitterSerial.c"
+ Parameters:    Size  Location     Type
+  packet          2   20[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   20[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_SerialWrite
+ This function is called by:
+		_Send
+ This function uses a non-reentrant model
+
+
+ *************** function _Async *****************
+ Defined at:
+		line 16 in file "async.c"
+ Parameters:    Size  Location     Type
+  function        2   16[BANK0 ] PTR FTN()void 
+		 -> onMove(0), IntervalTick(0), OnReceive(0), PollCallbackLegacyB(0), 
+		 -> PollCallbackLegacyA(0), TwitterSerialOnReceive(0), Absolute function(0), 
+  data            2   18[BANK0 ] PTR unsigned char 
+		 -> wireSendB(162), wireSendA(162), buffer(150), callbacks(440), 
+		 -> NULL(0), IncommingBuffer(50), Tweet@packet(12), 
+  len             2   20[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  i               2   22[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		___wmul
+		_memcpy
+		_Crash
+ This function is called by:
+		_HandleMention
+ This function uses a non-reentrant model
+
+
+ *************** function _HandleHashtag *****************
+ Defined at:
+		line 78 in file "twitter.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  packet          2    0        PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterOnReceive
+ This function uses a non-reentrant model
+
+
+ *************** function _ResetAllInterfaces *****************
+ Defined at:
+		line 83 in file "twitter.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_TwitterSerialReset
+		_TwitterWireMasterReset
+		_TwitterWireSlaveReset
+ This function is called by:
+		_TwitterOnReceive
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSerialReset *****************
+ Defined at:
+		line 56 in file "twitterSerial.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_ResetAllInterfaces
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterWireMasterReset *****************
+ Defined at:
+		line 114 in file "twitterWireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_ResetAllInterfaces
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterWireSlaveReset *****************
+ Defined at:
+		line 51 in file "twitterWireSlave.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_ResetAllInterfaces
+ This function uses a non-reentrant model
+
+
+ *************** function _WireSend *****************
+ Defined at:
+		line 74 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+  address         2   16[BANK0 ] int 
+  data            2   18[BANK0 ] PTR unsigned char 
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+  len             2   20[BANK0 ] int 
+  callback        2   22[BANK0 ] PTR FTN()void 
+		 -> Absolute function(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_memcpy
+		_TryToHelp
+ This function is called by:
+		_TwitterSendWireMaster
+ This function uses a non-reentrant model
+
+
+ *************** function _Crash *****************
+ Defined at:
+		line 6 in file "crashHelper.c"
+ Parameters:    Size  Location     Type
+  id              2    0[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_Async
+ This function uses a non-reentrant model
+
+
+ *************** function _AsyncBegin *****************
+ Defined at:
+		line 45 in file "async.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               2    6[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		___wmul
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _CountUp *****************
+ Defined at:
+		line 5 in file "ledCounter.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_LedCounterBegin
+		_IntervalTick
+ This function uses a non-reentrant model
+
+
+ *************** function _PollSlaves *****************
+ Defined at:
+		line 81 in file "twitterWireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_WireGetLegacy
+ This function is called by:
+		_IntervalTick
+ This function uses a non-reentrant model
+
+
+ *************** function _WireGetLegacy *****************
+ Defined at:
+		line 124 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+  address         2    0[BANK0 ] int 
+  len             2    2[BANK0 ] int 
+  callback        2    4[BANK0 ] PTR FTN()void 
+		 -> PollCallbackLegacyB(0), PollCallbackLegacyA(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_TryToHelp
+ This function is called by:
+		_PollSlaves
+ This function uses a non-reentrant model
+
+
+ *************** function _MacawBegin *****************
+ Defined at:
+		line 3 in file "macaw.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _SuperSimpleSerialBegin *****************
+ Defined at:
+		line 3 in file "superSimpleSerial.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _onSetup *****************
+ Defined at:
+		line 54 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_TwitterSignUp
+		_TwitterAddWireSlave
+		_TwitterRegisterSubject
+		_SerialBegin
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSignUp *****************
+ Defined at:
+		line 14 in file "twitter.c"
+ Parameters:    Size  Location     Type
+  _name           1    wreg     PTR unsigned char 
+		 -> STR_4(3), 
+ Auto vars:     Size  Location     Type
+  _name           1   16[BANK0 ] PTR unsigned char 
+		 -> STR_4(3), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_memcpy
+		_TwitterSerialBegin
+		_TwitterWireMasterBegin
+		_TwitterWireSlaveBegin
+ This function is called by:
+		_onSetup
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSerialBegin *****************
+ Defined at:
+		line 38 in file "twitterSerial.c"
+ Parameters:    Size  Location     Type
+  _twitterRece    2    0[BANK0 ] PTR FTN()void 
+		 -> TwitterOnReceive(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterSignUp
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterWireMasterBegin *****************
+ Defined at:
+		line 45 in file "twitterWireMaster.c"
+ Parameters:    Size  Location     Type
+  _twitterRece    2    0[BANK0 ] PTR FTN()void 
+		 -> TwitterOnReceive(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterSignUp
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterWireSlaveBegin *****************
+ Defined at:
+		line 12 in file "twitterWireSlave.c"
+ Parameters:    Size  Location     Type
+  _twitterRece    2    0[BANK0 ] PTR FTN()void 
+		 -> TwitterOnReceive(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterSignUp
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterRegisterSubject *****************
+ Defined at:
+		line 49 in file "twitter.c"
+ Parameters:    Size  Location     Type
+  _subject        1    wreg     PTR unsigned char 
+		 -> STR_5(2), 
+  callback        2    0[BANK0 ] PTR FTN()void 
+		 -> onMove(0), 
+ Auto vars:     Size  Location     Type
+  _subject        1    2[BANK0 ] PTR unsigned char 
+		 -> STR_5(2), 
+  subject         1    3[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_onSetup
+ This function uses a non-reentrant model
+
+
+ *************** function _SerialBegin *****************
+ Defined at:
+		line 32 in file "serial.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_onSetup
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterAddWireSlave *****************
+ Defined at:
+		line 35 in file "twitterWireSlave.c"
+ Parameters:    Size  Location     Type
+  id              2    2[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_JWireBegin
+		_JWireOnRequest
+		_JWireOnReceive
+ This function is called by:
+		_onSetup
+ This function uses a non-reentrant model
+
+
+ *************** function _JWireBegin *****************
+ Defined at:
+		line 100 in file "jwire.c"
+ Parameters:    Size  Location     Type
+  id              2    0[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterAddWireSlave
+ This function uses a non-reentrant model
+
+
+ *************** function _JWireOnRequest *****************
+ Defined at:
+		line 95 in file "jwire.c"
+ Parameters:    Size  Location     Type
+  callbackToUs    2    0[BANK0 ] PTR FTN()void 
+		 -> OnRequest(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterAddWireSlave
+ This function uses a non-reentrant model
+
+
+ *************** function _JWireOnReceive *****************
+ Defined at:
+		line 90 in file "jwire.c"
+ Parameters:    Size  Location     Type
+  callbackToUs    2    0[BANK0 ] PTR FTN()void 
+		 -> OnReceive(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterAddWireSlave
+ This function uses a non-reentrant model
+
+
+ *************** function _LedCounterBegin *****************
+ Defined at:
+		line 22 in file "ledCounter.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_SetInterval
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _SetInterval *****************
+ Defined at:
+		line 28 in file "interval.c"
+ Parameters:    Size  Location     Type
+  delayInMs       2    8[BANK0 ] int 
+  callbackToUs    2   10[BANK0 ] PTR FTN()void 
+		 -> CountUp(0), PollSlaves(0), 
+ Auto vars:     Size  Location     Type
+  i               2   12[BANK0 ] int 
+  i               2   14[BANK0 ] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		___awdiv
+ This function is called by:
+		_LedCounterBegin
+ This function uses a non-reentrant model
+
+
+ *************** function _onLoop *****************
+ Defined at:
+		line 61 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _TryToHelp *****************
+ Defined at:
+		line 54 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_WireSend
+		_WireGetLegacy
+ This function uses a non-reentrant model
+
+
+ *************** function _GetParity *****************
+ Defined at:
+		line 3 in file "parity.c"
+ Parameters:    Size  Location     Type
+  packet          2    0[BANK0 ] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Auto vars:     Size  Location     Type
+  p               2    6[BANK0 ] PTR struct PACKETAlt_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+  parity          1    5[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       3       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_SetParity
+ This function uses a non-reentrant model
+
+
+ *************** function _go *****************
+ Defined at:
+		line 18 in file "main.c"
+ Parameters:    Size  Location     Type
+  leftForward     1    wreg     unsigned char 
+  leftPower       1   27[BANK0 ] unsigned char 
+  rightForward    1   28[BANK0 ] unsigned char 
+  rightPower      1   29[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  leftForward     1   30[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       3       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_send
+ This function is called by:
+		_onMove
+ This function uses a non-reentrant model
+
+
+ *************** function _send *****************
+ Defined at:
+		line 8 in file "main.c"
+ Parameters:    Size  Location     Type
+  command         1    wreg     unsigned char 
+  data            1   20[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+  command         1   25[BANK0 ] unsigned char 
+  packet          4   21[BANK0 ] unsigned char [4]
+  address         1    0        unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       1       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       7       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        7 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_SerialWrite
+ This function is called by:
+		_go
+ This function uses a non-reentrant model
+
+
+ *************** function _SerialWrite *****************
+ Defined at:
+		line 69 in file "serial.c"
+ Parameters:    Size  Location     Type
+  data            2   16[BANK0 ] PTR unsigned char 
+		 -> send@packet(4), wireSendB(162), wireSendA(162), callbacks(440), 
+		 -> NULL(0), IncommingBuffer(50), Tweet@packet(12), 
+  len             2   18[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_memcpy
+ This function is called by:
+		_TwitterSendSerial
+		_send
+ This function uses a non-reentrant model
+
+
+ *************** function _memcpy *****************
+ Defined at:
+		line 13 in file "/opt/microchip/xc8/v1.12/sources/memcpy.c"
+ Parameters:    Size  Location     Type
+  d1              2    6[BANK0 ] PTR void 
+		 -> wireSendB(162), wireSendA(162), writeBuffer(100), buffer(150), 
+		 -> callbacks(440), request(12), slaveB(8), slaveA(8), 
+		 -> Tweet@packet(12), name(2), 
+  s1              2    8[BANK0 ] PTR const void 
+		 -> STR_4(3), send@packet(4), wireSendB(162), wireSendA(162), 
+		 -> buffer(150), callbacks(440), NULL(0), request(12), 
+		 -> IncommingBuffer(50), Tweet@packet(12), name(2), 
+  n               2   10[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  s               2   14[BANK0 ] PTR const unsigned char 
+		 -> STR_4(3), send@packet(4), wireSendB(162), wireSendA(162), 
+		 -> buffer(150), callbacks(440), NULL(0), request(12), 
+		 -> IncommingBuffer(50), Tweet@packet(12), name(2), 
+  d               2   12[BANK0 ] PTR unsigned char 
+		 -> wireSendB(162), wireSendA(162), writeBuffer(100), buffer(150), 
+		 -> callbacks(440), request(12), slaveB(8), slaveA(8), 
+		 -> Tweet@packet(12), name(2), 
+ Return value:  Size  Location     Type
+                  2    wreg      PTR void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0      10       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterSignUp
+		_TwitterSendWireSlave
+		_Async
+		_SerialWrite
+		_WireSend
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 10 in file "/opt/microchip/xc8/v1.12/sources/awdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[BANK0 ] int 
+  divisor         2    2[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  quotient        2    6[BANK0 ] int 
+  sign            1    5[BANK0 ] unsigned char 
+  counter         1    4[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       8       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_SetInterval
+ This function uses a non-reentrant model
+
+
+ *************** function ___awmod *****************
+ Defined at:
+		line 10 in file "/opt/microchip/xc8/v1.12/sources/awmod.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[BANK0 ] int 
+  divisor         2    2[BANK0 ] int 
+ Auto vars:     Size  Location     Type
+  sign            1    5[BANK0 ] unsigned char 
+  counter         1    4[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_IntervalTick
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 3 in file "/opt/microchip/xc8/v1.12/sources/wmul.c"
+ Parameters:    Size  Location     Type
+  multiplier      2    0[BANK0 ] unsigned int 
+  multiplicand    2    2[BANK0 ] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2    4[BANK0 ] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[BANK0 ] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       4       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       2       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		Nothing
+ This function is called by:
+		_Async
+		_AsyncTick
+		_AsyncBegin
+		i2_Async
+		_atoi
+ This function uses a non-reentrant model
+
+
+ *************** function _onInterrupt *****************
+ Defined at:
+		line 3 in file "interrupts.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:         12       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        12       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       12 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_OnIntervalInterrupt
+		_JWireOnInterrupt
+		_WireOnInterrupt
+		_OnSerialInterrupt
+		_SerialWriteInterrupt
+		i2_Crash
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function _OnIntervalInterrupt *****************
+ Defined at:
+		line 23 in file "interval.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_AsyncBlank
+ This function is called by:
+		_onInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _JWireOnInterrupt *****************
+ Defined at:
+		line 23 in file "jwire.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  temp            2    0        int 
+  data            2   24[COMRAM] int 
+  addr            2    0        int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		i2_Async
+		_OnRequest
+		Absolute function
+ This function is called by:
+		_onInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _OnRequest *****************
+ Defined at:
+		line 19 in file "twitterWireSlave.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_JWireRespond
+ This function is called by:
+		_TwitterAddWireSlave
+		_JWireOnInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _JWireRespond *****************
+ Defined at:
+		line 123 in file "jwire.c"
+ Parameters:    Size  Location     Type
+  msg             1    wreg     PTR unsigned char 
+		 -> request(12), 
+  len             2   16[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  msg             1   18[COMRAM] PTR unsigned char 
+		 -> request(12), 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_memcpy
+ This function is called by:
+		_OnRequest
+ This function uses a non-reentrant model
+
+
+ *************** function _WireOnInterrupt *****************
+ Defined at:
+		line 244 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_HandleSends
+		_HandleReadsLegacy
+		_HandleReads
+ This function is called by:
+		_onInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _OnSerialInterrupt *****************
+ Defined at:
+		line 12 in file "serial.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, pclat, tosl, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_TwitterSerialOnInterrupt
+		Absolute function
+ This function is called by:
+		_onInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _TwitterSerialOnInterrupt *****************
+ Defined at:
+		line 16 in file "twitterSerial.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_Count
+		_CheckParity
+		i2_Async
+ This function is called by:
+		_OnSerialInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _Count *****************
+ Defined at:
+		line 15 in file "ledCounter.c"
+ Parameters:    Size  Location     Type
+  number          2    0[COMRAM] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_TwitterSerialOnInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _CheckParity *****************
+ Defined at:
+		line 15 in file "parity.c"
+ Parameters:    Size  Location     Type
+  packet          2    8[COMRAM] PTR struct PACKET_T
+		 -> IncommingBuffer(50), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2    8[COMRAM] int 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_GetParity
+ This function is called by:
+		_TwitterSerialOnInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _SerialWriteInterrupt *****************
+ Defined at:
+		line 84 in file "serial.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_onInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _HandleSends *****************
+ Defined at:
+		line 151 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_AsyncBlank
+		i2_TryToHelp
+ This function is called by:
+		_WireOnInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _AsyncBlank *****************
+ Defined at:
+		line 30 in file "async.c"
+ Parameters:    Size  Location     Type
+  function        2   24[COMRAM] PTR FTN()void 
+		 -> IntervalTick(0), PollCallbackLegacyB(0), PollCallbackLegacyA(0), Absolute function(0), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i2_Async
+ This function is called by:
+		_OnIntervalInterrupt
+		_HandleSends
+ This function uses a non-reentrant model
+
+
+ *************** function _HandleReads *****************
+ Defined at:
+		line 177 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i2_Async
+		i2_TryToHelp
+ This function is called by:
+		_WireOnInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function _HandleReadsLegacy *****************
+ Defined at:
+		line 211 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i2_Async
+		i2_TryToHelp
+ This function is called by:
+		_WireOnInterrupt
+ This function uses a non-reentrant model
+
+
+ *************** function i2_Async *****************
+ Defined at:
+		line 16 in file "async.c"
+ Parameters:    Size  Location     Type
+  Async           2   16[COMRAM] PTR FTN()void 
+		 -> onMove(0), IntervalTick(0), OnReceive(0), PollCallbackLegacyB(0), 
+		 -> PollCallbackLegacyA(0), TwitterSerialOnReceive(0), Absolute function(0), 
+  Async           2   18[COMRAM] PTR unsigned char 
+		 -> wireSendB(162), wireSendA(162), buffer(150), callbacks(440), 
+		 -> NULL(0), IncommingBuffer(50), Tweet@packet(12), 
+  Async           2   20[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  Async           2   22[COMRAM] int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2___wmul
+		i2_memcpy
+		i2_Crash
+ This function is called by:
+		_TwitterSerialOnInterrupt
+		_AsyncBlank
+		_JWireOnInterrupt
+		_HandleReads
+		_HandleReadsLegacy
+ This function uses a non-reentrant model
+
+
+ *************** function i2_TryToHelp *****************
+ Defined at:
+		line 54 in file "wireMaster.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_HandleSends
+		_HandleReads
+		_HandleReadsLegacy
+ This function uses a non-reentrant model
+
+
+ *************** function i2_Crash *****************
+ Defined at:
+		line 6 in file "crashHelper.c"
+ Parameters:    Size  Location     Type
+  Crash           2    0[COMRAM] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_onInterrupt
+		i2_Async
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GetParity *****************
+ Defined at:
+		line 3 in file "parity.c"
+ Parameters:    Size  Location     Type
+  GetParity       2    0[COMRAM] PTR struct PACKET_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+ Auto vars:     Size  Location     Type
+  GetParity       2    6[COMRAM] PTR struct PACKETAlt_T
+		 -> wireSendB(162), wireSendA(162), callbacks(440), NULL(0), 
+		 -> IncommingBuffer(50), Tweet@packet(12), 
+  GetParity       1    5[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          3       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_CheckParity
+ This function uses a non-reentrant model
+
+
+ *************** function i2_memcpy *****************
+ Defined at:
+		line 13 in file "/opt/microchip/xc8/v1.12/sources/memcpy.c"
+ Parameters:    Size  Location     Type
+  memcpy          2    6[COMRAM] PTR void 
+		 -> wireSendB(162), wireSendA(162), writeBuffer(100), buffer(150), 
+		 -> callbacks(440), request(12), slaveB(8), slaveA(8), 
+		 -> Tweet@packet(12), name(2), 
+  memcpy          2    8[COMRAM] PTR const void 
+		 -> STR_4(3), send@packet(4), wireSendB(162), wireSendA(162), 
+		 -> buffer(150), callbacks(440), NULL(0), request(12), 
+		 -> IncommingBuffer(50), Tweet@packet(12), name(2), 
+  memcpy          2   10[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  memcpy          2   14[COMRAM] PTR const unsigned char 
+		 -> STR_4(3), send@packet(4), wireSendB(162), wireSendA(162), 
+		 -> buffer(150), callbacks(440), NULL(0), request(12), 
+		 -> IncommingBuffer(50), Tweet@packet(12), name(2), 
+  memcpy          2   12[COMRAM] PTR unsigned char 
+		 -> wireSendB(162), wireSendA(162), writeBuffer(100), buffer(150), 
+		 -> callbacks(440), request(12), slaveB(8), slaveA(8), 
+		 -> Tweet@packet(12), name(2), 
+ Return value:  Size  Location     Type
+                  1    wreg      PTR void 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         6       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        10       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       10 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_JWireRespond
+		i2_Async
+ This function uses a non-reentrant model
+
+
+ *************** function i2___wmul *****************
+ Defined at:
+		line 3 in file "/opt/microchip/xc8/v1.12/sources/wmul.c"
+ Parameters:    Size  Location     Type
+  __wmul          2    0[COMRAM] unsigned int 
+  __wmul          2    2[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  __wmul          2    4[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i2_Async
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+twitterWireMaster.c
+		_TwitterWireMas		CODE           	2508	0000	18
+		_PollSlaves    		CODE           	1CE4	0000	104
+		_TwitterWireMas		CODE           	255C	0000	10
+		_TwitterSendWir		CODE           	2548	0000	10
+		_PollCallbackLe		CODE           	126C	0000	228
+		_PollCallbackLe		CODE           	25A4	0000	2
+
+twitterWireMaster.c estimated size: 372
+
+/opt/microchip/xc8/v1.12/sources/memcpy.c
+		_memcpy        		CODE           	1D4C	0000	96
+
+/opt/microchip/xc8/v1.12/sources/memcpy.c estimated size: 96
+
+twitterWireSlave.c
+		_TwitterAddWire		CODE           	2302	0000	46
+		_TwitterSendWir		CODE           	216E	0000	70
+		_OnReceive     		CODE           	248C	0000	28
+		_TwitterWireSla		CODE           	257A	0000	10
+		_OnRequest     		CODE           	222E	0000	56
+		_TwitterWireSla		CODE           	2566	0000	10
+
+twitterWireSlave.c estimated size: 220
+
+async.c
+		_AsyncTick     		CODE           	1350	0000	212
+		_AsyncBegin    		CODE           	2126	0000	72
+		_Async         		CODE           	17D8	0000	180
+		_AsyncBlank    		CODE           	246E	0000	30
+
+async.c estimated size: 494
+
+shared
+		__stringdata   		SMALLCONST     	0D00	0000	24
+		i2_Async       		CODE           	188C	0000	180
+		i2_Crash       		CODE           	24F2	0000	4294966024
+		i2_TryToHelp   		CODE           	1EBA	0000	86
+		i2___wmul      		CODE           	229C	0000	54
+		__initializatio		CODE           	1940	0000	148
+		i2_GetParity   		CODE           	1FFA	0000	78
+		i2_memcpy      		CODE           	1E08	0000	92
+
+shared estimated size: 4294966686
+
+macaw.c
+		_MacawBegin    		CODE           	259E	0000	4
+
+macaw.c estimated size: 4
+
+jspic.c
+		_main          		CODE           	2330	0000	4294963232
+
+jspic.c estimated size: 4294963232
+
+twitterSerial.c
+		_TwitterSendSer		CODE           	25A6	0000	2
+		_TwitterSerialB		CODE           	2570	0000	10
+		_TwitterSerialO		CODE           	24A8	0000	28
+		_TwitterSerialO		CODE           	166E	0000	182
+		_TwitterSerialR		CODE           	2552	0000	10
+
+twitterSerial.c estimated size: 232
+
+main.c
+		_onLoop        		CODE           	25AA	0000	2
+		_onSetup       		CODE           	2384	0000	38
+		_onMove        		CODE           	1DAC	0000	92
+		_go            		CODE           	20DC	0000	74
+		_send          		CODE           	22D2	0000	48
+
+main.c estimated size: 254
+
+serial.c
+		_SerialBegin   		CODE           	2450	0000	30
+		_SerialWriteInt		CODE           	1C76	0000	110
+		_OnSerialInterr		CODE           	1FAC	0000	78
+		_SerialWrite   		CODE           	1C04	0000	114
+
+serial.c estimated size: 332
+
+interrupts.c
+		_onInterrupt   		CODE           	0008	0000	5550
+
+interrupts.c estimated size: 5550
+
+/opt/microchip/xc8/v1.12/sources/awmod.c
+		___awmod       		CODE           	1B02	0000	134
+
+/opt/microchip/xc8/v1.12/sources/awmod.c estimated size: 134
+
+/opt/microchip/xc8/v1.12/sources/wmul.c
+		___wmul        		CODE           	2266	0000	54
+
+/opt/microchip/xc8/v1.12/sources/wmul.c estimated size: 54
+
+ledCounter.c
+		_Count         		CODE           	251A	0000	18
+		_LedCounterBegi		CODE           	24C4	0000	24
+		_CountUp       		CODE           	23CE	0000	34
+
+ledCounter.c estimated size: 76
+
+wireMaster.c
+		_HandleReads   		CODE           	0E84	0000	356
+		_WireOnInterrup		CODE           	21B4	0000	62
+		_TryToHelp     		CODE           	1E64	0000	86
+		_HandleReadsLeg		CODE           	0D1A	0000	362
+		_WireSend      		CODE           	15B6	0000	184
+		_HandleSends   		CODE           	113A	0000	306
+		_WireGetLegacy 		CODE           	1B88	0000	124
+
+wireMaster.c estimated size: 1480
+
+/opt/microchip/xc8/v1.12/sources/awdiv.c
+		___awdiv       		CODE           	19DA	0000	150
+
+/opt/microchip/xc8/v1.12/sources/awdiv.c estimated size: 150
+
+parity.c
+		_GetParity     		CODE           	1F5E	0000	78
+		_SetParity     		CODE           	2412	0000	32
+		_CheckParity   		CODE           	235A	0000	42
+
+parity.c estimated size: 152
+
+crashHelper.c
+		_Crash         		CODE           	24DC	0000	4294966346
+
+crashHelper.c estimated size: 4294966346
+
+interval.c
+		_SetInterval   		CODE           	1424	0000	202
+		_OnIntervalInte		CODE           	253A	0000	14
+		_IntervalTick  		CODE           	1A70	0000	146
+
+interval.c estimated size: 362
+
+superSimpleSerial.c
+		_SuperSimpleSer		CODE           	2432	0000	30
+
+superSimpleSerial.c estimated size: 30
+
+twitter.c
+		_HandleHashtag 		CODE           	25A8	0000	2
+		_TwitterOnRecei		CODE           	21F2	0000	60
+		_TwitterSignUp 		CODE           	1F10	0000	78
+		_Send          		CODE           	2048	0000	74
+		_HandleMention 		CODE           	1724	0000	180
+		_TwitterRegiste		CODE           	2092	0000	74
+		_ResetAllInterf		CODE           	252C	0000	14
+
+twitter.c estimated size: 482
+
+jwire.c
+		_JWireRespond  		CODE           	23F0	0000	34
+		_JWireOnInterru		CODE           	0FE8	0000	338
+		_JWireOnReceive		CODE           	258E	0000	10
+		_JWireOnRequest		CODE           	2584	0000	10
+		_JWireBegin    		CODE           	23AA	0000	36
+
+jwire.c estimated size: 428
+

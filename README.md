@@ -1,4 +1,4 @@
 JSPIC
 =====
 
-jsPic
+JSPIC

@@ -1,0 +1,54 @@
+
+# 1 "parity.c"
+
+# 5 "packets.h"
+typedef struct LEGACY_PACKET_T {
+unsigned char id;
+unsigned char num;
+unsigned char parity;
+unsigned char count;
+unsigned char data[4];
+} LegacyPacket_t;
+
+# 17
+typedef struct PACKET_T {
+short to;
+short from;
+unsigned char parity;
+unsigned char count;
+unsigned char subject;
+unsigned char data[5];
+} Packet_t;
+
+
+typedef struct PACKETAlt_T {
+char to[2];
+char from[2];
+unsigned char parity;
+unsigned char count;
+unsigned char subject;
+unsigned char data[5];
+} PacketAlt_t;
+
+# 7 "parity.h"
+void SetParity(Packet_t *packet);
+
+
+int CheckParity(Packet_t *packet);
+
+# 3 "parity.c"
+unsigned char GetParity(Packet_t *packet) {
+PacketAlt_t *p = (PacketAlt_t *)packet;
+
+unsigned char parity = p->to[0] + p->to[1] + p->from[0] + p->from[1];
+
+return parity;
+}
+
+void SetParity(Packet_t *packet) {
+packet->parity = GetParity(packet);
+}
+
+int CheckParity(Packet_t *packet) {
+return (packet->parity == GetParity(packet));
+}

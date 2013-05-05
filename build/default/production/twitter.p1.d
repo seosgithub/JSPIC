@@ -1,0 +1,21 @@
+ build/default/production/twitter.d  \
+ build/default/production/twitter.p1:  \
+ twitter.c  \
+parity.h  \
+jwire.h  \
+async.h  \
+twitterSerial.h  \
+string2.h  \
+ledCounter.h  \
+twitterWireMaster.h  \
+crashHelper.h  \
+twitter.h  \
+json.h  \
+macaw.h  \
+packets.h  \
+flipper.h  \
+serial.h  \
+globals.h  \
+interval.h  \
+wireMaster.h  \
+twitterWireSlave.h 

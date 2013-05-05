@@ -2,6 +2,10 @@
 
 jsPIC is a platform for the PIC18 processor that provides a javascript inspired API with 'remoting' capabilities for RPC.
 
+*The networking architecture allows for meshing PIC's togeather.  E.g. If you have three PIC's, two linked by I2C and two linked by serial,
+they will all communicate just fine within the networking framework.  jsPIC supports a lightweight search algorithm that
+will find the correct PIC even if it has to route through other PIC's.
+
 # Examples
 
 ## Blink a light every second

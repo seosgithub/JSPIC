@@ -1,17 +1,6 @@
-# dnode
+# jsPIC
 
-dnode is an asynchronous rpc system for node.js that lets you
-call remote functions.
-
-You can pass callbacks to remote functions, and the remote end can call
-the functions you passed in with callbacks of its own and so on.
-It's callbacks all the way down!
-
-[![browser support](https://ci.testling.com/substack/dnode.png)](http://ci.testling.com/substack/dnode)
-
-[![build status](https://secure.travis-ci.org/substack/dnode.png)](http://travis-ci.org/substack/dnode)
-
-![dnode: freestyle rpc](http://substack.net/images/dnode.png)
+jsPIC is a platform for the PIC18 processor that provides a javascript inspired API with 'remoting' capabilities for RPC.
 
 # example
 

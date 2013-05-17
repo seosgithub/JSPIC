@@ -1,4 +1,4 @@
-# jsPIC
+# jsPIC - The Best PIC18 MeshNetworking, Remoting, and processing framework.
 
 Authors: Matt Ibarra, Seo Townsend 2013
 

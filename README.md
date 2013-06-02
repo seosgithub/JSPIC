@@ -1,4 +1,4 @@
-# jsPIC - It Just Works.
+# jsPIC - It Just Works.  Pic18F2680 ECE4534
 
 Authors: Matt Ibarra, Seo Townsend 2013
 

@@ -1,7 +1,8 @@
-# jsPIC - It Just Works.  (PIC18F2680)
+# jsPIC - Javascript Inspired PIC Framework
 
 Authors: Matt Ibarra, Seo Townsend 2013
 
+Currently supports the PIC18F2680
 jsPIC is a platform for the PIC18 processor that provides a javascript inspired API with 'remoting' capabilities for RPC.
 
 *The networking architecture allows for meshing PIC's togeather.  E.g. If you have three PIC's, two linked by I2C and two linked by serial,
